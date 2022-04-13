@@ -1,0 +1,86 @@
+.App {
+	display:flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color:beige;
+}
+
+
+.options {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+Button {
+	background-color: sandybrown;
+	font-weight: 700;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-decoration: underline;
+	color: whitesmoke;
+	border-radius: 30%;
+}
+
+Button:hover{
+	cursor: pointer;
+	background-color: saddlebrown;
+	transition:0.3s;
+}
+.App-nav {
+  display: flex;
+  margin: 1rem auto;
+  justify-content: space-around;
+  text-align: center;
+}
+
+nav {
+	margin: 27px auto 0;
+	position: relative;
+	width: 590px;
+	height: 50px;
+	background-color: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.active-link {
+  color: blue;
+  border-bottom: 1px solid black;
+}
+
+.App-link {
+  color: #61dafb;
+}
